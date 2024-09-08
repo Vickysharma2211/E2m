@@ -1,0 +1,476 @@
+body, p{
+    margin: 0px;
+}
+
+/* Global Custom Container */
+.vs-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.vs-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header.vs-header {
+    color: #fff;
+}
+.transparent-header {
+    position: absolute;
+    width: 100%;
+}
+header.vs-header {
+    padding-top: 42px;
+}
+ul.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0px;
+}
+ul.menu li a {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;    
+    color: #fff;
+    text-decoration: none;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+   color: white;
+  position: relative;
+  z-index: 9;
+  /* Needed for absolute positioning of menu */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+ 
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  margin: 10px 0;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+
+/* Banner Section css */
+section.vs-banner {        
+    padding-top: 280px;
+    padding-bottom: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+section.vs-banner:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("http://localhost/e2m/wp-content/uploads/2024/09/banner-overlay.png");
+    display: block;
+    position: absolute;
+    top: 0px;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+section.vs-banner .vs-banner-content {
+    position: relative;
+    z-index: 1;
+}
+.vs-banner-content h1 {
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+}
+.vs-banner-content h6 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.31px;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+}
+.vs-banner-content h6 span {
+    color: #e1874b;
+}
+
+
+/* property-card */
+.property-card {
+    box-shadow: 0px 20px 20px 0px #00000008;
+}
+
+ul.property-detail-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    list-style-type: none;
+    gap: 23px;
+    margin: 0px;
+}
+
+ul.property-detail-vs li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+   
+}
+.card-head img {
+    width: 100%;
+}
+.property-vs {
+    gap: 30px;
+}
+.card-content {
+    padding: 30px;
+}
+.proeprty-add {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;    
+}
+.property-id p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
+    margin: 0px;
+}
+h5.amount {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    text-align: left;
+    color: #E1874B;
+    margin: 0px;
+}
+
+
+.property-tabs {
+    margin: 20px 0;
+}
+.property-tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 110px;
+}
+.property-tab-links a {
+    background: #fff;
+    color: #333;    
+    border-radius: 0px;
+    width: 150px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.property-tab-links li {
+    margin-right: 10px;
+}
+
+.property-tab-links a.active {
+    background: #fff;
+    color: #E1874B;
+    border-bottom: 2px solid;
+}
+.property-tab-content {
+    display: none;
+}
+.main-logo img {
+    width: 213px;
+    height: 48px;
+}
+.property-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px; 
+}
+
+
+.property-item img {
+    width: 100%; 
+    height: auto; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 10px; 
+}
+
+.property-item h2 {
+    font-size: 1.2em; 
+    margin: 0 0 10px;
+}
+
+.property-item p {
+    margin: 5px 0; 
+    color: #666; 
+}
+.property-detail {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+.property-detail p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.property-detail p img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+section.property-section {
+    position: relative;
+    padding-top: 100px;
+}
+.title-col {
+    margin-bottom: -75px;
+}
+
+.property-content {
+    position: relative;
+}
+
+.property-item.property-card {
+    position: relative;
+}
+
+.card-head {
+    position: relative;
+}
+
+label.property-active {
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    padding: 10px 25px;
+    left: 10px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
+    color: #2F8E89;
+}
+.pro-bottom {
+    padding: 15px;
+    padding:30px;
+}
+button#load-more {
+    background-color: #E1874B;
+    color: #fff;
+    min-width: 300px;
+    height: 60px;
+       margin-top: 80px;
+    margin-bottom: 100px;
+}
+.load-more-button {
+    text-align: center;
+}
+.title-col h2 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: left;
+    margin: 0px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .property-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .property-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:1300px){
+    .property-detail{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:1200px){
+    .vs-banner-content h1 {
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+    .vs-banner-content h1 br {
+        display: none;
+    }
+    .property-detail p {
+        font-size: 13px;
+    }
+    ul#primary-menu li {
+        margin: 0px;
+    }
+    .vs-container{
+        width:90%;
+    }
+}
+@media(max-width:992px){    
+    .title-col {
+        margin-bottom: 0px;
+        text-align: center !important;
+        width: 100%;
+    }
+    .property-tab-links{
+        justify-content: center;
+    }
+    .property-tab-links{
+        margin-bottom: 45px;
+    }
+
+    .navigation.active {
+        display: block; 
+    }
+    .vs-banner-content h1 {
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+    section.vs-banner {
+        padding-top: 170px;
+        padding-bottom: 200px;       
+    }
+    .vs-container{
+        width:90%;
+    }
+    header.vs-header.transparent-header{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    ul#primary-menu li a{
+        font-size: 12px;
+    }
+}
+@media (min-width: 769px) {    
+  
+  .menu-toggle {
+    display: none;   
+  }
+
+  .navigation {
+    display: block;
+    position: static;
+    /* Static positioning for larger screens */
+    background-color: transparent;
+    text-align: right;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0px;
+  }
+
+  .navigation ul li {
+    margin: 0 15px;
+  }
+}
+@media(max-width:768px){
+    .main-logo img {
+        width: 150px;
+        object-fit: contain !important;
+    }
+    header.vs-header {
+        padding-top: 20px;
+    }
+    
+    button.menu-toggle {
+        background-color: transparent;
+    }
+    button.menu-toggle span {
+        width: 35px;
+        height: 5px;
+        display: block;
+        background-color: #fff;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .vs-banner-content h6 {
+        font-size: 3vw;
+        margin-bottom: 20px;
+    }
+    nav.navigation {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        text-align: center;
+        background-color: #000;
+    }
+    .property-tab-links {
+        flex-wrap: wrap;
+    }
+    ul#primary-menu {
+        display: block;
+    }
+    
+}
